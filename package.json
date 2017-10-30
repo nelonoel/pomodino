@@ -1,7 +1,7 @@
 {
-  "name": "disconnect",
+  "name": "pomodino",
   "version": "0.1.0",
-  "private": true,
+  "homepage": ".",
   "dependencies": {
     "react": "^16.0.0",
     "react-detect-offline": "^1.0.5",

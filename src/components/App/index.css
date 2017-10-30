@@ -1,0 +1,19 @@
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.dino {
+  height: 6em;
+}
+
+.center {
+  text-align: center;
+}
+
+.rules > h3 {
+  margin-bottom: 0.5em;
+}
