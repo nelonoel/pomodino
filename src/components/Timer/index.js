@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import dino from '../../assets/dino.gif'
+import TimeFormat from 'hh-mm-ss'
 
 export class OfflineTimer extends Component {
   componentDidMount() {
@@ -25,11 +26,11 @@ export class OfflineTimer extends Component {
           <p>Points</p>
         </div>
         <div className="timer">
-          <h1>{offlineTime}</h1>
+          <h1>{TimeFormat.fromS(offlineTime, 'hh:mm:ss')}</h1>
           <p>Offline Time</p>
         </div>
         <div className="timer">
-          <h1>{onlineTime}</h1>
+          <h1>{TimeFormat.fromS(Math.floor(onlineTime / 60) * 60, 'hh:mm:ss')}</h1>
           <p>Online Time</p>
         </div>
       </div>
@@ -65,11 +66,11 @@ export class OnlineTimer extends Component {
           <p>Points</p>
         </div>
         <div className="timer">
-          <h1>{offlineTime}</h1>
+          <h1>{TimeFormat.fromS(offlineTime, 'hh:mm:ss')}</h1>
           <p>Offline Time</p>
         </div>
         <div className="timer">
-          <h1>{onlineTime}</h1>
+          <h1>{TimeFormat.fromS(Math.floor(onlineTime), 'hh:mm:ss')}</h1>
           <p>Online Time</p>
         </div>
       </div>

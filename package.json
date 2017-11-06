@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": ".",
   "dependencies": {
+    "hh-mm-ss": "^1.2.0",
     "react": "^16.0.0",
     "react-detect-offline": "^1.0.5",
     "react-dom": "^16.0.0",
